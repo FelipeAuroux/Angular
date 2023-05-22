@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@500&display=swap');
+
+.example-spacer {
+
+    flex: 1 1 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+  }
+
