@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import { MenuComponent } from './materiais/menu/menu.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { FlipCardComponent } from './materiais/flip-card/flip-card.component';
+
 
 
 
@@ -16,7 +18,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   declarations: [
     AppComponent,
     CardComponent,
-    MenuComponent
+    MenuComponent,
+    FlipCardComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     BrowserAnimationsModule,
     MatCardModule,
     MatToolbarModule,
-  
+      
   ],
   providers: [],
   bootstrap: [AppComponent]

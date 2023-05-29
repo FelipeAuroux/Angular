@@ -3,55 +3,20 @@
 *{
     padding: 0;
     box-sizing: border-box;
-    display: flex;
+    display: relative;
   
 }
-.main-div{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.example-card {
-  max-width: 400px;
-  border: 2px solid #8BA59C;
-  border-radius: 15px;
-  background-image:url('https://i.pinimg.com/564x/fe/8c/00/fe8c00392c0f5cea29ab96fc0428655c.jpg'); 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: 400px 100%;
-  
-  }
 
-  .example-card img {
-        width: 350px;
-        margin: auto;
-        
-        
-
-  }
-  
   .example-header-image {
     background-image: url(../../../assets/imagens/iconCupHeart.png);
-    background-size: cover;
-    
+    background-size: cover;    
   }
-  .example-card mat-card-title{
+
+
+  .example-header mat-card-title{
     font-family: 'Montserrat', sans-serif;
-
   }
-  .example-card mat-card-subtitle{
+  .example-header mat-card-subtitle{
     font-family: 'Montserrat', sans-serif;
-
   }
-
-
-    .example-card p {
-    color: rgb(0, 0, 0);
-    text-align: justify;
-    font-family: 'Merriweather', serif;
-    font-size: 14px;
-
-    }
