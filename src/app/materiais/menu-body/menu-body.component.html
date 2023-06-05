@@ -1,0 +1,17 @@
+<div class="geral">
+<div class="example-button-row">
+
+
+<button id="fonte" mat-raised-button routerLink="/home">Home</button>
+<button mat-raised-button [matMenuTriggerFor]="doces">
+    <div id="fonte" class="valign-center">Receitas<i class ="material-icons">arrow_drop_down</i>
+    </div></button>
+<button id="fonte" mat-raised-button (click)="openExternalSite()">Site Principal</button>
+
+<mat-menu id="fonte" #doces="matMenu">
+    <button mat-menu-item routerLink="/doces">Doces</button>
+    <button mat-menu-item routerLink="/salgadas">Salgadas</button>
+    <button mat-menu-item routerLink="/afeto-de-mae">Afeto de Mãe</button>
+</mat-menu>
+</div>
+</div>

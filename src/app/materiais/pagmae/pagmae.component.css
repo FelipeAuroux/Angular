@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@500&display=swap');
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+
+    
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #000000;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(36, 35, 35, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #e2f8e1 40%, #b6dff0 100%);
+}
+
+.card_title {
+  color: #000000;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #000000;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+
+.card {
+  border-radius: 16px;
+  margin: 0 auto;
+  width: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  
+  background-size: cover;
+}
+#card1{
+  background-image: url(https://www.wcrf-uk.org/wp-content/uploads/2021/06/588595864r-LS.jpg);
+}
+#card2{
+  background-image: url(https://conteudo.imguol.com.br/50/2019/10/31/uma-das-formas-de-usar-o-alcool-e-para-flambar-pratos-1572536806432_v2_4x3.jpg);
+}
+#card3{
+  background-image: url(https://blog.dana-farber.org/insight/wp-content/uploads/2020/04/pexels-photo-1109197-1-683x1024.jpg);
+}
+
+.info {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+  transform: translateY(100%)
+    translateY(-88px)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.info:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(https://source.unsplash.com/collection/905011/1000x1000);
+  filter: blur(10px);
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%)
+    translateY(88px)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover .info,
+.card:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.title {
+  margin: 0;
+  padding: 24px;
+  font-size: 40px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.description {
+  margin: 0;
+  padding: 0 24px 24px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* General layout and typography stuff */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+* {
+  box-sizing: border-box;
+  position: relative;
+  transition: all .3s ease
+}
+
+html {
+  font-size: 16px
+}
+
+body {
+  font-family: Open Sans, Verdana, sans-serif;
+  color: rgba(0, 0, 0, .87);
+  font-weight: 400;
+  line-height: 1.45
+}
+
+body,
+header {
+  background: #fafafa
+}
+
+header {
+  padding: 40px;
+  min-height: 200px;
+  text-align: center;
+  color: rgba(0, 0, 0, .87)
+}
+
+header > * {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+header>:last-child {
+  margin-bottom: 0
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  color: #1c5b72;
+  font-size: 2.618em
+}
+
+@media (min-width:800px) {
+  h1 {
+    font-size: 4.236em;
+    font-weight: 300
+  }
+}
+
+p {
+  margin-bottom: 1.3em;
+  line-height: 1.618
+}
+
+@media (min-width:800px) {
+  p {
+    font-size: 1.3em
+  }
+}
+
+a {
+  color: #e03616;
+  text-decoration: none
+}

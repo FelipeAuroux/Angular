@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@500&display=swap');
+
+.bg {
+    background-image: url('../../../assets/imagens/BgAquarela.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+  }
+
+.container-2 {
+  display: grid;
+    place-items: center;
+    margin-top: 6vh;
+
+}
+  .container {
+    display: flex;
+  flex-direction: column;
+  
+}
+
+.container > * {
+  margin-bottom: 0;
+
+}
