@@ -1,85 +1,84 @@
-
 *{
-    padding: 0;
-    box-sizing: border-box;
-    display: relative;
-  
+  padding: 0;
+  box-sizing: border-box;
+  display: relative;
+
 }
 
 .container {
-    width: 450px;
-    height: 650px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    position: relative;
-    perspective: 800px;
-    border-radius: 4px;
-       
-    
-  }
-  .container img {
-    width: 450px;
-    height: 650px;
-    border-radius: 12px;
-  }
+  width: 450px;
+  height: 650px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  position: relative;
+  perspective: 800px;
+  border-radius: 4px;
+     
+  
+}
+.container img {
+  width: 450px;
+  height: 650px;
+  border-radius: 12px;
+}
 
 .container p {
-    padding: 35px;
-    margin: flex;
-    text-size-adjust: 36px;
+  padding: 35px;
+  margin: flex;
+  text-size-adjust: 36px;
 
 }
 
-  .card {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    transform-style: preserve-3d;
-    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border-radius: 6px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-  }
-  
-  .card .front,
-  .card .back {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 6px;
-    background-color: #ffffff;
-    color: #000000;
-    display: grid;
-    place-items: center;
-  }
-  
-  .back {
-    transform: rotateY(180deg);
-  }
-  
-  .flipped {
-    transform: rotateY(180deg);
-  }
-  
-  .arrow-icon {
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    opacity: 1;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    
-  }
+.card {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 6px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
 
-  #img1 {
-    margin-bottom: 35px;
-    margin-right: 20px;
-    height: 50px;
-  }
+.card .front,
+.card .back {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #000000;
+  display: grid;
+  place-items: center;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.arrow-icon {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  opacity: 1;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  
+}
+
+#img1 {
+  margin-bottom: 35px;
+  margin-right: 20px;
+  height: 50px;
+}

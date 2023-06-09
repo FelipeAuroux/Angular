@@ -1,26 +1,13 @@
+* {
+    margin: 0;
+    border: none;
+  }
 
 .bg {
     background-image: url('../assets/imagens/BgAquarela.jpg');
-    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
-  }
-
-.container-2 {
-  display: grid;
-    place-items: center;
-    margin-top: 6vh;
-
-}
-  .container {
-    display: flex;
-  flex-direction: column;
-  
-}
-
-.container > * {
-  margin-bottom: 0;
+    padding-bottom: 20px;
 
 }

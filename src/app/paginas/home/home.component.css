@@ -1,21 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@500&display=swap');
 
-.bg {
-    background-image: url('../../../assets/imagens/BgAquarela.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(0, 0, 0);
-  }
-
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
 .container-2 {
-  display: grid;
-    place-items: center;
-    margin-top: 6vh;
 
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top:10px;
 }
   .container {
     display: flex;
@@ -23,7 +21,8 @@
   
 }
 
-.container > * {
-  margin-bottom: 0;
-
+@media screen and (max-width: 700px), (max-height: 500px) {
+  .container-2 {
+    flex-direction: column;
+  }
 }

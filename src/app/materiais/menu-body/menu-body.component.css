@@ -1,69 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@500&display=swap');
 
-
-
 #fonte {
   font-family: 'Montserrat', sans-serif;
-    color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
-.valign-center{
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-end;
-
+.site-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: 8px;
+  font-size: 18px;
+  margin-left: 10px;
 }
 
-section {
-    display: table;
+.example-button-row {
+  display: flex;
+  align-items: center;
+  margin-right: 0%;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(0, 0, 0);
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 8px;
+}
+
+.receitas-button {
+  padding: 0;
+}
+
+.receitas-button div {
+  padding: 6px 8px;
+}
+
+.receitas-button .valign-center {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.responsivo {
+  margin-right: 0%;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu-button {
+  display: none;
+}
+
+/* Estilos para o menu responsivo */
+.responsive-menu {
+  display: none;
+  width: 30%;
+  padding-top: 6px;
+  position: absolute;
+  z-index: 999;
+}
+
+.geral {
+  position: relative;
+}
+
+/* Estilos para a versão responsiva */
+@media screen and (max-width: 768px) {
+  .responsive-menu.open {
+    display: flex;
+    flex-direction: column;
   }
-  
-  .example-label {
-    display: table-cell;
-    font-size: 14px;
-    margin-left: 8px;
-    min-width: 120px;
-  }
-  
+
   .example-button-row {
-    margin-right: 0%;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(0, 0, 0);
-    height: 60px;
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .responsive-menu {
     background-color: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-
-  }
-  
-  .example-button-row .mat-mdc-button-base {
-    margin: 8px 8px 8px 0;
-  }
-  
-  .example-flex-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .example-button-container {
-    display: flex;
-    justify-content: center;
-    width: 120px;
+    padding: 8px;
   }
 
-  @media screen and (max-width: 768px) {
-    .example-flex-container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    
-    .example-label {
-      margin-left: 0;
-      margin-bottom: 8px;
-    }
-    
-    .example-button-container {
-      width: 100%;
-      justify-content: flex-start;
-    }
+  .responsive-menu button {
+    margin-bottom: 8px;
   }
+}

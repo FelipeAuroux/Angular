@@ -1,17 +1,40 @@
 <div class="geral">
-<div class="example-button-row">
+  <div class="example-button-row">
+    <div class="site-name">Receitas de Afeto!</div>
+    <div class="button-container">
+      <button id="fonte" mat-raised-button routerLink="/home">Home</button>
+      <button mat-raised-button [matMenuTriggerFor]="doces" class="receitas-button">
+        <div id="fonte" class="valign-center">Receitas<i class="material-icons">arrow_drop_down</i></div>
+      </button>
+      <button id="fonte" mat-raised-button (click)="openExternalSite()">Site Principal</button>
+    </div>
+    <mat-menu id="fonte" #doces="matMenu">
+      <button mat-menu-item routerLink="/doces">Doces</button>
+      <button mat-menu-item routerLink="/salgadas">Salgadas</button>
+      <button mat-menu-item routerLink="/afeto-de-mae">Afeto de Mãe</button>
+    </mat-menu>
+  </div>
 
+  <div class="responsivo">
+    <button id="fonte" mat-icon-button (click)="toggleMenu()" class="menu-button">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
 
-<button id="fonte" mat-raised-button routerLink="/home">Home</button>
-<button mat-raised-button [matMenuTriggerFor]="doces">
-    <div id="fonte" class="valign-center">Receitas<i class ="material-icons">arrow_drop_down</i>
-    </div></button>
-<button id="fonte" mat-raised-button (click)="openExternalSite()">Site Principal</button>
-
-<mat-menu id="fonte" #doces="matMenu">
-    <button mat-menu-item routerLink="/doces">Doces</button>
-    <button mat-menu-item routerLink="/salgadas">Salgadas</button>
-    <button mat-menu-item routerLink="/afeto-de-mae">Afeto de Mãe</button>
-</mat-menu>
-</div>
+  <!-- Opções do menu responsivo -->
+  <div class="responsive-menu" [class.open]="menuAberto">
+    <div class="site-name">Receitas de Afeto!</div>
+    <div class="button-container">
+      <button id="fonte" mat-raised-button routerLink="/home" (click)="closeMenu()">Home</button>
+      <button mat-raised-button [matMenuTriggerFor]="doces" class="receitas-button">
+        <div id="fonte" class="valign-center">Receitas<i class="material-icons">arrow_drop_down</i></div>
+      </button>
+      <button id="fonte" mat-raised-button (click)="openExternalSite(); closeMenu()">Site Principal</button>
+    </div>
+    <mat-menu id="fonte" #doces="matMenu">
+      <button mat-menu-item routerLink="/doces" (click)="closeMenu()">Doces</button>
+      <button mat-menu-item routerLink="/salgadas" (click)="closeMenu()">Salgadas</button>
+      <button mat-menu-item routerLink="/afeto-de-mae" (click)="closeMenu()">Afeto de Mãe</button>
+    </mat-menu>
+  </div>
 </div>

@@ -21,6 +21,11 @@ import {MatDividerModule} from '@angular/material/divider';
 import { CardreceitasComponent } from './materiais/carddoces/cardreceitas.component';
 import { CardsalgadosComponent } from './materiais/cardsalgados/cardsalgados.component';
 import { PagmaeComponent } from './materiais/pagmae/pagmae.component';
+import { FooterComponent } from './materiais/footer/footer.component';
+import { ExplicareceitasComponent } from './paginas/explicareceitas/explicareceitas.component';
+import { DetalhesreceitasComponent } from './materiais/detalhesreceitas/detalhesreceitas.component';
+import { Card2Component } from './materiais/card2/card2.component';
+
 
 
 
@@ -40,6 +45,10 @@ import { PagmaeComponent } from './materiais/pagmae/pagmae.component';
     CardreceitasComponent,
     CardsalgadosComponent,
     PagmaeComponent,
+    FooterComponent,
+    ExplicareceitasComponent,
+    DetalhesreceitasComponent,
+    Card2Component,
     
   ],
   imports: [
@@ -52,6 +61,7 @@ import { PagmaeComponent } from './materiais/pagmae/pagmae.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+
           
   ],
   providers: [],

@@ -6,6 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-body.component.css']
 })
 export class MenuBodyComponent {
+  menuAberto = false;
+
+  toggleMenu() {
+    this.menuAberto = !this.menuAberto;
+  }
+
+  closeMenu() {
+    this.menuAberto = false;
+  }
+  
   openExternalSite() {
     window.open('https://descomplicagenshin.firebaseapp.com', '_blank');
   }
